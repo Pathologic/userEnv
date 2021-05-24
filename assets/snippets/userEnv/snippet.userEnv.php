@@ -10,6 +10,7 @@ if ($geo = $SxGeo->getCityFull($env['ip'])) {
     $env['city'] = $geo['city']['name_ru'];
     $env['region'] = $geo['region']['name_ru'];
     $env['country'] = $geo['country']['name_ru'];
+    $env['country_iso'] = $geo['country']['iso'];
 };
 if (isset($FormLister)) {
     $FormLister->setFields($env,'env');
