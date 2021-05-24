@@ -237,7 +237,7 @@ class SxGeo {
 				case 'T': $v = unpack('C', $val); break;
 				case 's': $v = unpack('s', $val); break;
 				case 'S': $v = unpack('S', $val); break;
-				case 'm': $v = unpack('l', $val . (ord($val{2}) >> 7 ? "\xff" : "\0")); break;
+				case 'm': $v = unpack('l', $val . (ord($val{'2'}) >> 7 ? "\xff" : "\0")); break;
 				case 'M': $v = unpack('L', $val . "\0"); break;
 				case 'i': $v = unpack('l', $val); break;
 				case 'I': $v = unpack('L', $val); break;
